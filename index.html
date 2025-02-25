@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8D3BBNGXC9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-8D3BBNGXC9');
+  </script>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/icon" href="static/images/Robust-RL-Benchmark-logo-single.ico" />
+  <style>
+    .video-carousel {
+      width: 90%; /* Adjust as needed */
+      height: 200px; /* Adjust as needed */
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+      margin-left: 5%; /* Add space on the left side */
+      font-size: 0;
+  }
+
+  .video-carousel-end {
+      width: 90%; /* Adjust as needed */
+      height: 200px; /* Adjust as needed */
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+      margin-left: 5%; /* Add space on the left side */
+      font-size: 0;
+  }
+  
+    .video-slide {
+      width: 210px; /* 1/5 of the container */
+      height: 100%;
+      margin: 0;
+      padding: 0;
+  
+  }
+
+  .video-slide-end {
+      width: 210px; /* 1/5 of the container */
+      height: 100%;
+      margin: 0;
+      padding: 0;
+  
+  }
+
+    .teaser-image {
+      /* up space */
+      display: block; /* Ensures image takes up full width of its container */
+      max-width: 100%; /* Ensures image doesn't exceed its container width */
+      height: auto; /* Preserves aspect ratio of the image */
+  }
+
+
+  
+  @keyframes slide {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+  
+
+
+  </style>
+
+  <title>Robust-RL-Benchmark</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+</head>
+<body>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">Robust Gymnasium: A Unified Modular Benchmark for Robust Reinforcement Learning</h1>    
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://shangdinggu.net/" target="_blank">Shangding Gu*<sup>1</sup></a>,
+            </span>
+            <span class="author-block">
+              <a href="https://laixishi.github.io/" target="_blank">Laixi Shi*<sup>2</sup></a>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=Zt1WFtQAAAAJ&hl=en" target="_blank">Muning Wen<sup>3</sup></a>,
+            </span>
+            <!-- &emsp;  -->
+            <span class="author-block">
+              <a href="http://www.jinming.tech/" target="_blank">Ming Jin<sup>4</sup></a>,
+            </span>
+            <span class="author-block">
+              <a href="http://users.cms.caltech.edu/~mazumdar/" target="_blank">Eric Mazumdar<sup>2</sup></a>,
+            </span>
+            <span class="author-block">
+              <a href="https://users.ece.cmu.edu/~yuejiec/" target="_blank">Yuejie Chi<sup>5</sup></a>,
+            </span>
+            <span class="author-block">
+              <a href="https://adamwierman.com/" target="_blank">Adam Wierman<sup>2</sup></a>,
+            </span>
+            <span class="author-block">
+              <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/spanos.html" target="_blank">Costas Spanos<sup>1</sup></a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">&emsp; <sup>1</sup>University of California Berkeley, <sup>2</sup> California Institute of Technology, <sup>3</sup> Shanghai Jiao Tong University,  &emsp;  <sup>4</sup> Virginia Tech, <sup>5</sup> Carnegie Mellon University, <sup>*</sup> Equal contribution</span>
+          </div>    
+
+          <!-- <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Anonymous authors
+            </span>
+            
+          </div> -->
+          
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a target="_blank" class="button is-normal is-rounded is-dark" href="https://github.com/SafeRL-Lab/Robust-Gymnasium/blob/main/docs/_static/paper/Robust_RL_benchmark-git.pdf">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a class="button is-normal is-rounded is-dark" href="https://github.com/SafeRL-Lab/Robust-Gymnasium">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+
+  <div class="video-carousel">    
+   <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Ant_variant_1.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Ant_variant_2.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Ant_variant_3.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Ant_variant_4.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Ant_variant_5.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Ant_variant_6.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Ant_variant_2.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Ant_variant_2.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/HalfCheetah_variant_1.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/HalfCheetah_variant_2.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/HalfCheetah_variant_3.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/HalfCheetah_variant_4.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/HalfCheetah_variant_5.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/robust_fetch_1.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Robust_androit_hand_1.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Robust_androit_hand_2.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Robust_androit_hand_3.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Robust_androit_hand_4.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/robust_dexterous_hand_1.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/robust_dexterous_hand_2.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/robust_dexterous_hand_3.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/robust_dexterous_hand_4.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/robust_dexterous_hand_5.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Nominal_task.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/multi-robot-door.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Shifted_task_1.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Shifted_task_2.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Shifted_task_3.mp4" type="video/mp4">
+    </video>
+    <!-- <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Shifted_task_4.mp4" type="video/mp4">
+    </video> -->
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Shifted_task_5.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Shifted_task_6.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Shifted_task_7.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Shifted_task_8.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Shifted_task_9.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Shifted_task_10.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Shifted_task_11.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Shifted_task_12.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/Shifted_task_13.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/edit-robust-rl/humanoidStandup-v4.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/edit-robust-rl/inver-double.mp4" type="video/mp4">
+    </video>
+    <video class="video-slide" playsinline autoplay loop muted>
+        <source src="./static/videos/trailer/edit-robust-rl/humanoid.mp4" type="video/mp4">
+    </video>
+  </div> 
+
+
+<!-- </div> -->
+<script src="./static/js/rolling-video.js"></script>
+<script src="./static/js/rolling-video-end.js"></script>
+<section class="hero is-light">
+  <br>
+  <div class="container is-max-desktop">
+    <div class="column is-centered">
+      <img src="./static/videos/robust/gif-edit-overview.gif" alt="teaser" class="teaser-image">
+    </div>
+    <br> 
+    <br> 
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+
+      <div class="column" style="padding: 0 40px;">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Driven by inherent uncertainty and the sim-to-real gap, robust reinforcement learning (RL) seeks to improve resilience against the complexity and variability in agent-environment sequential interactions. Despite the existence of a large number of RL benchmarks, there is a lack of standardized benchmarks for robust RL. Current robust RL policies often focus on a specific type of uncertainty and are evaluated in distinct, one-off environments. In this work, we introduce Robust-Gymnasium, a unified modular benchmark designed for robust RL that supports a wide variety of disruptions across all key RL components—agents' observed state and reward, agents' actions, and the environment. It offers over sixty diverse task environments spanning control and robotics, safe RL, and multi-agent RL. Robust-Gymnasium provides an open-source and user-friendly tool for the community to assess current methods and foster the development of robust RL algorithms. 
+In addition, we benchmark existing standard and robust RL algorithms in Robust-Gymnasium, uncovering significant deficiencies in each and offering new insights.
+          </p><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section has-text-justified">
+  <div class="container is-max-desktop">
+    <!--/ Method. -->
+
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-3">Benchmark Features</h2>
+      </div>
+    </div>
+
+    <p>This benchmark aims to advance robust reinforcement learning (RL) for real-world applications and domain adaptation. The benchmark provides a comprehensive set of tasks that cover various robustness requirements in the face of uncertainty on state, action, reward, and environmental dynamics, and spans diverse applications including control, robot manipulations, dexterous hand, and more. (This repository is under active development. We appreciate any constructive comments and suggestions).</p>
+<br>
+<h3>🔥 <strong>Benchmark Features:</strong></h3>
+<ul>
+  <li><strong>High Modularity:</strong> It is designed for flexible adaptation to a variety of research needs, featuring high modularity to support a wide range of experiments.</li>
+  <li><strong>Task Coverage:</strong> It provides a comprehensive set of tasks to evaluate robustness across different RL scenarios.</li>
+  <li><strong>High Compatibility:</strong> It can be seamless and compatible with a wide range of existing environments.</li>
+  <li><strong>Support Vectorized Environments:</strong> It can enable parallel processing of multiple environments for efficient experimentation.</li>
+  <li><strong>Support for New Gym API:</strong> It fully supports the latest standards in Gym API, facilitating easy integration and expansion.</li>
+  <li><strong>LLMs Guide Robust Learning:</strong> Leverage LLMs to set robust parameters (LLMs as adversary policies).</li>
+</ul>
+<br> 
+<h3>🔥 <strong>Benchmark Tasks:</strong></h3>
+<ul>
+  <li><strong>Robust MuJoCo Tasks:</strong> Tackle complex simulations with enhanced robustness.</li>
+  <li><strong>Robust Box2D Tasks:</strong> Engage with 2D physics environments designed for robustness evaluation.</li>
+  <li><strong>Robust Robot Manipulation Tasks:</strong> Robust robotic manipulation with Kuka and Franka robots.</li>
+  <li><strong>Robust Safety Tasks:</strong> Prioritize safety in robustness evaluation.</li>
+  <li><strong>Robust Android Hand Tasks:</strong> Explore sophisticated hand manipulation challenges in robust settings.</li>
+  <li><strong>Robust Dexterous Tasks:</strong> Advance the robust capabilities in dexterous robotics.</li>
+  <li><strong>Robust Fetch Manipulation Tasks:</strong> Robust object manipulation with Fetch robots.</li>
+  <li><strong>Robust Robot Kitchen Tasks:</strong> Robust manipulation in Kitchen environments with robots.</li>
+  <li><strong>Robust Maze Tasks:</strong> Robust navigation robots.</li>
+  <li><strong>Robust Multi-Agent Tasks:</strong> Facilitate robust coordination among multiple agents.</li>
+</ul>
+
+<p>Each of these robust tasks incorporates elements such as robust observations, actions, reward signals, and dynamics to evaluate the robustness of RL algorithms.</p>
+<br> 
+<h3>🔥 <strong>Our Vision:</strong></h3>
+<p>We hope this benchmark serves as a useful platform for pushing the boundaries of RL in real-world problems --- promoting robustness and domain adaptation ability!</p>
+
+    <br> 
+    <br> 
+
+
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-3">Robust RL Framework</h2>
+      </div>
+    </div>
+
+     <p>Robust RL problems typically consists of three modules:</p>
+<ul>
+  <li><strong>An agent (a policy):</strong> tries to learn a strategy &pi; (a policy) based on the observation from the environment to achieve optimal long-term return</li>
+  <li><strong>An environment/task:</strong> a task that determines the agents' immediate reward r(&middot;| s,a) and the physical or logical dynamics (transition function P(&middot;| s,a))</li>
+  <li><strong>The disruptor module:</strong> represents the uncertainty/perturbation events that happen during any part of the interaction process between the agent and environment, with different modes, sources, and frequencies.</li>
+</ul>      
+      <br>
+      <!-- <h2 class="subtitle is-4" style="text-align: center;">Locomotion</h2>  -->
+    <div class="column is-centered">
+      <img src="./static/images/robust/tasks-illustration2.png" alt="teaser" class="teaser-image">
+    </div>      
+    <div class="column is-centered">
+      <img src="./static/images/robust/world-model3.png" alt="teaser" class="teaser-image">
+    </div>    
+    <br>
+    <br>
+
+    
+
+      
+
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-3">Opportunities for Future Research!</h2>
+      </div>
+    </div>
+    
+    <p>By leveraging this benchmark, we can evaluate the robustness of RL algorithms and develop new ones that perform reliably under real-world uncertainties and adversarial conditions. This involves creating agents that maintain their performance despite distributional shifts, noisy data, and unforeseen perturbations. Therefore, there are vast opportunities for future research with this benchmark, such as:</p>
+
+  <ol>
+  <li><strong>Integrating techniques from robust optimization, adversarial training, LLMs, and safe learning</strong> to enhance generalization and adaptability.</li>
+  <li><strong>Improving sample efficiency and safety in robust settings</strong>, which is crucial for deploying these systems in high-stakes applications like healthcare, finance, and autonomous vehicles.</li>
+  </ol>
+
+   <p>In conclusion, by using this benchmark, we can test and refine the robustness of RL algorithms before deploying them in diverse, real-world scenarios.</p>
+
+    <br>
+
+  </div>
+</section>
+
+
+    <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="titile">BibTeX</h2>
+    <pre><code>@article{robustrl2024,
+  title={Robust Gymnasium: A Unified Modular Benchmark for Robust Reinforcement Learning},
+  author={Gu, Shangding and Shi, Laixi and Wen, Muning and Jin, Ming and Mazumdar, Eric and Chi, Yuejie and Wierman, Adam and Spanos, Costas},
+  journal={Github},
+  year={2024}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="custom_footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            Template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, <a href="https://xingyu-lin.github.io/spawnnet/">SpawnNet</a>, <a href="https://wuphilipp.github.io/gello_site/">Gello</a>, and <a href="https://humanoid-bench.github.io/">Humanoid Bench</a>.
+          </p><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
