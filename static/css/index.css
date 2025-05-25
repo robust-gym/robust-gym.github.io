@@ -214,7 +214,7 @@ ol {
 }
 
 .carousel .item {
-  overflow: hidden;
+  overflow: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -250,6 +250,30 @@ ol {
 .carousel .item.active::after {
   background: rgba(255, 255, 255, 1); /* Fully opaque white background on active item */
 }
+
+.video-carousel {
+  width: 90%;
+  height: 200px;
+  overflow-x: auto;         /* 允许横向滚动 */
+  overflow-y: hidden;
+  white-space: nowrap;      /* 保证横向一行排列 */
+  position: relative;
+  margin-left: 5%;
+  font-size: 0;
+  /* 让滚动条显眼 */
+  scrollbar-width: thin;
+  scrollbar-color: #888 #e0e0e0;
+}
+
+.video-slide {
+  display: inline-block;    /* 保证不是 flex 或 block */
+  width: 210px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #000;         /* 可选，保证可见 */
+}
+
 
 /* .carousel-container { */
 /*   overflow: hidden; */
